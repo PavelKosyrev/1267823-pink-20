@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Косырев](https://up.htmlacademy.ru/adaptive/20/user/1267823).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Давлетбаев](https://htmlacademy.ru/profile/davletbaev).
 
 ---
 
