@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/150x150" alt="Логотип сайта">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="application">
+        <h1 class="visually-hidden">Приложение Pink</h1>
+        <div class="application__wrapper">
+          <p class="application__tagline">Взгляните на жизнь иначе!</p>
+          <a class="application__button-link" href="#">Скачать приложение</a>
+          <ul class="application__list">
+            <li class="application__item">
+              <a class="application__link applicationl__link--ios" href="#" aria-label="ссылка на приложение для IOS"></a>
+            </li>
+            <li class="application__item">
+              <a class="application__link applicationl__link--android"  href="#" aria-label="ссылка на приложение для Android"></a>
+            </li>
+            <li class="application__item">
+              <a class="application__link applicationl__link--windows"  href="#" aria-label="ссылка на приложение для Windows"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="advantages__wrapper">
+          <p class="advantages_tagline">Устали от серости мегаполиса?</p>
+          <p class="advantages_tagline">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo"></a>
+        <section class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#" aria-label="Youtube"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
