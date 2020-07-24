@@ -114,25 +114,30 @@
         </div>
       </section>
       <section class="photo-editor">
-        <h2 class="visually-hidden">Загрузка фотографии</h2>
         <div class="photo-editor__wrapper">
           <h3 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
           <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-          <label for="image" aria-label="Выберите файл"></label>
-          <input  class="photo-editor__form" type="file" name="image" id="image">
+          <div class="photo-editor__output">
+          </div>
+          <div class="photo-editor__input">
+            <label aria-label="Выберите файл">
+              <input  class="photo-editor__form" type="file" name="image">
+            </label>
+          </div>
           <div class="photo-editor__tools">
             <div class="tool">
               <button class="tool__item tool__item--prune" type="button" aria-label="Обрезать фото"></button>
               <button class="tool__item tool__item--filter" type="button" aria-label="Добавить фильтр"></button>
               <button class="tool__item tool__item--contrast" type="button" aria-label="Изменить контраст"></button>
             </div>
-            <div class="scale-contorl">
-              <div class="scale-contorl__bar"></div>
-              <button class="scale-contorl__toggle" type="button" aria-label="Ползунок для регулирования масштаба изображения"></button>
+            <div class="scale-control">
+              <label aria-label="Ползунок для регулирования масштаба изображения">
+                <input class="scale-control__toggle" type="range" name="toggle">
+              </label>
             </div>
           </div>
           <button class="photo-editor__button button" type="submit">Запостить</button>
-          <button class="photo-editor__button button" type="submit">Отмена</button>
+          <button class="photo-editor__button button" type="reset">Отмена</button>
         </div>
       </section>
     </main>
