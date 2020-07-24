@@ -126,9 +126,12 @@
           </div>
           <div class="photo-editor__tools">
             <div class="tool">
-              <button class="tool__item tool__item--prune" type="button" aria-label="Обрезать фото"></button>
-              <button class="tool__item tool__item--filter" type="button" aria-label="Добавить фильтр"></button>
-              <button class="tool__item tool__item--contrast" type="button" aria-label="Изменить контраст"></button>
+              <label class="tool__item tool__item--prune"  for="prune" role="button" aria-label="Обрезать фото"></label>
+              <input class="scale-control__toggle scale-control__toggle--prune" type="range" name="prune" id="prune">
+              <label class="tool__item tool__item--filter"  for="prune" role="button" aria-label="Добавить фильтр"></label>
+              <input class="scale-control__toggle scale-control__toggle--filter" type="range" name="filter" id="filter">
+              <label class="tool__item tool__item--contrast" for="range" role="button" aria-label="Изменить контраст"></label>
+              <input class="scale-control__toggle scale-control__toggle--contrast" type="range" name="range" id="range">
             </div>
             <div class="scale-control">
               <label aria-label="Ползунок для регулирования масштаба изображения">
