@@ -113,6 +113,36 @@
           </article>
         </div>
       </section>
+      <section class="photo-editor">
+        <div class="photo-editor__wrapper">
+          <h3 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+          <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+          <div class="photo-editor__output">
+          </div>
+          <div class="photo-editor__input">
+            <label aria-label="Выберите файл">
+              <input  class="photo-editor__form" type="file" name="image">
+            </label>
+          </div>
+          <div class="photo-editor__tools">
+            <div class="tool">
+              <label class="tool__item tool__item--prune"  for="prune" role="button" aria-label="Обрезать фото"></label>
+              <input class="tool__toggle tool__toggle--prune" type="range" name="prune" id="prune">
+              <label class="tool__item tool__item--filter"  for="prune" role="button" aria-label="Добавить фильтр"></label>
+              <input class="tool__toggle tool__toggle--filter" type="range" name="filter" id="filter">
+              <label class="tool__item tool__item--contrast" for="range" role="button" aria-label="Изменить контраст"></label>
+              <input class="tool-__toggle tool__toggle--contrast" type="range" name="range" id="range">
+            </div>
+            <div class="scale-control">
+              <label aria-label="Ползунок для регулирования масштаба изображения">
+                <input class="scale-control__toggle" type="range" name="toggle">
+              </label>
+            </div>
+          </div>
+          <button class="photo-editor__button button" type="submit">Запостить</button>
+          <button class="photo-editor__button button" type="reset">Отмена</button>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
