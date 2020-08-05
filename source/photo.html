@@ -30,19 +30,19 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__title-wrapper">
+      <div class="page-header__title-wrapper container">
         <h1 class="page-header__title">Фотографии пользователей</h1>
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__title-wrapper">
+      <div class="page-main__title-wrapper container">
         <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="photo-block">
-        <div class="photo-block__wrapper">
+        <div class="photo-block__wrapper container">
           <h2 class="visually-hidden">Галерея фотографий</h2>
-          <article class="photo-block__item photo photo--top">
-            <a class="photo__link photo__link--main" href="#">
+          <article class="photo-block__item photo">
+            <a class="photo__link photo__link--top" href="#">
               <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото">
             </a>
             <h3 class="photo__name-user">Анна<span class="photo__data-comment">(5 минут назад)</span></h3>
@@ -121,8 +121,8 @@
         </div>
       </section>
       <section class="photo-editor">
-        <div class="photo-editor__wrapper">
-          <h3 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+        <div class="photo-editor__wrapper container">
+          <h2 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
           <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
           <div class="photo-editor__output">
           </div>
@@ -133,26 +133,100 @@
           </div>
           <div class="photo-editor__tools">
             <div class="tool">
-              <label class="tool__item tool__item--prune"  for="prune" role="button" aria-label="Обрезать фото"></label>
-              <input class="tool__toggle tool__toggle--prune" type="range" name="prune" id="prune">
-              <label class="tool__item tool__item--filter"  for="prune" role="button" aria-label="Добавить фильтр"></label>
-              <input class="tool__toggle tool__toggle--filter" type="range" name="filter" id="filter">
-              <label class="tool__item tool__item--contrast" for="range" role="button" aria-label="Изменить контраст"></label>
-              <input class="tool-__toggle tool__toggle--contrast" type="range" name="range" id="range">
+              <button class="tool__button tool__button--active" type="button" aria-label="Обрезать фото">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
+              </button>
+              <button class="tool__button" type="button" aria-label="Добавить фильтр">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
+              </button>
+              <button class="tool__button" type="button" aria-label="Изменить контраст">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
+              </button>
+              <div class="tool__control">
+              <label aria-label="Ползунок для регулирования">
+                <input class="tool__toggle" type="range" name="toggle">
+              </label>
             </div>
+            <button class="photo-editor__button button" type="submit">Запостить</button>
+            <button class="photo-editor__button button" type="reset">Отмена</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!--<label class="tool__item tool__item--prune"  for="prune" role="button" aria-label="Обрезать фото">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
+              </label>
+              <input class="tool__toggle tool__toggle--mobile tool__toggle--prune" type="range" name="prune" id="prune">
+              <label class="tool__item tool__item--filter"  for="prune" role="button" aria-label="Добавить фильтр">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
+              </label>
+              <input class="tool__toggle tool__toggle--mobile tool__toggle--filter" type="range" name="filter" id="filter">
+              <label class="tool__item tool__item--contrast" for="range" role="button" aria-label="Изменить контраст">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
+              </label>
+              <input class="tool-__toggle tool__toggle--mobile tool__toggle--contrast" type="range" name="range" id="range">
+            </div>
+
+
             <div class="scale-control">
               <label aria-label="Ползунок для регулирования масштаба изображения">
                 <input class="scale-control__toggle" type="range" name="toggle">
               </label>
             </div>
           </div>
+
+
+
           <button class="photo-editor__button button" type="submit">Запостить</button>
           <button class="photo-editor__button button" type="reset">Отмена</button>
         </div>
-      </section>
+      </section>-->
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html">
           <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Логотип сайта">
         </a>

@@ -1,0 +1,47 @@
+.table-price {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 828px;
+  border-collapse: collapse;
+  background-color: @white;
+}
+
+.table-price__header {
+  &:first-child {
+    display: none;
+  }
+
+  &:not(:nth-child(2)):not(:last-child) {
+    border-right: 2px solid @border-gray;
+    border-left: 2px solid @border-gray;
+  }
+  background-color: @gray;
+  color: @white;
+}
+
+.table-price__type {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.table-price__price {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.table-price__cell {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &:first-child {
+    display: none;
+  }
+  border: 2px solid @border-gray;
+  border-top: 0;
+}
