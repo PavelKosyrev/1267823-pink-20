@@ -1,7 +1,14 @@
-.photo__link img {
-  margin: 0;
-
+.photo__link {
+  width: 280px;
+  display: block;
   text-decoration: none;
+
+  &--top {
+    width: 320px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .photo__name-user {
@@ -22,7 +29,6 @@
 .photo__comment {
   margin: 0;
 }
-
 
 .photo__like-text,
 .photo__like-number {
