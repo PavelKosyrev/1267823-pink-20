@@ -1,10 +1,29 @@
 .social__list {
+  display: flex;
   margin: 0;
   padding: 0;
-
   list-style: none;
+
+  /*outline-offset: -5px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);*/
+}
+
+.social__item {
+  margin-right: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  fill: @red;
   text-decoration: none;
 }

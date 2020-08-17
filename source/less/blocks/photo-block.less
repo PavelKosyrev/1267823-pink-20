@@ -1,4 +1,29 @@
 .photo-block__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.photo-block__item {
+  background-color: @light-gray;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    outline-offset: -5px;
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+
+    &--top {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }

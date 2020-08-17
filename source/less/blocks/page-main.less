@@ -5,5 +5,18 @@
 
 .page-main__title {
   margin: 0;
+  padding-top: 54px;
+  padding-bottom: 60px;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 85px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 97px;
+  }
 }
