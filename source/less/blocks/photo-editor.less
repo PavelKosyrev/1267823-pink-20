@@ -1,4 +1,13 @@
 .photo-editor__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
@@ -8,4 +17,34 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+}
+
+.photo-editor__form {
+  display: block;
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(122, 100, 255, 0.7);
+}
+
+.photo-editor__tools {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(122, 255, 0, 0.7);
 }
