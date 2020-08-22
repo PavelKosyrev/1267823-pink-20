@@ -62,21 +62,23 @@
           <span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
+
+
       <section class="user-form">
         <form action="https://echo.htmlacademy.ru" method="post">
         <div class="user-form__wrapper container">
           <section  class="user-form__name name">
             <h3 class="visually-hidden">Укажите данные о себе</h3>
             <ul class="name__list">
-              <li сlass="name__item">
+              <li class="name__item">
                 <label class="name__label" for="surname">Фамилия:</label>
                 <input class="name__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
               </li>
-              <li сlass="name__item">
+              <li class="name__item">
                 <label class="name__label" for="name">Имя:</label>
                 <input class="name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
               </li>
-              <li сlass="name__item">
+              <li class="name__item">
                 <label class="name__label" for="patronymic">Отчество:</label>
                 <input class="name__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
@@ -150,12 +152,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset  class="user-form__name comment">
+          <fieldset  class="user-form__comment comment">
             <legend class="comment__legend">Опишите свои эмоции</legend>
             <textarea class="comment__text" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
-          <button class="user-form__button" type="submit">Отправить форму</button>
-          <small class="user-form__footnote"><span class="user-form__footnote--star">*</span> — обязательные поля</small>
+
+          <div class="user-form__submit">
+            <button class="user-form__button" type="submit">Отправить форму</button>
+            <small class="user-form__footnote"><span class="user-form__footnote--star">*</span> — обязательные поля</small>
+          </div>
         </div>
       </section>
     </main>

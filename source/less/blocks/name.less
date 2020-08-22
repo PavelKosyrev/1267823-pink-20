@@ -3,6 +3,17 @@
   padding: 0;
 
   list-style: none;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(122, 255, 0, 0.7);
+}
+
+.name__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .name__label {
@@ -12,9 +23,13 @@
 }
 
 .name__input {
-  width: 100%;
+  flex-grow: 1;
+
   padding: 23px 20px;
   font-size: 18px;
   line-height: 30px;
+
+  border: 2px solid @border-gray;
+  border-radius: 1px;
   box-sizing: border-box;
 }

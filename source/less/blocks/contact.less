@@ -1,5 +1,30 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    &:first-child {
+      order: -2;
+    }
+
+    &:last-child {
+      order: -1;
+    }
+  }
+}
+
 .contact__text {
   margin: 0;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 34px;
+  }
 
   font-weight: 700;
   font-size: 18px;
@@ -7,6 +32,7 @@
 }
 
 .contact__item {
+
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

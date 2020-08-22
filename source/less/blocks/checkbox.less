@@ -2,10 +2,20 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @border-gray;
+    border-radius: 1px;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 255, 0, 0.7);
 }
 
 .checkbox__legend {
+  padding: 0;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: @red;
 }
@@ -15,6 +25,17 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.checkbox__item {
+  @media (min-width: @desktop-width) {
+    width: 260px;
+  }
 }
 
 .checkbox__label {

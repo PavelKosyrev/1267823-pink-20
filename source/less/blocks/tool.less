@@ -1,3 +1,30 @@
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(122, 255, 0, 0.7);
+}
+
+.tool__range-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool__range {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .tool__button {
   fill: @gray;
   opacity: 0.3;
@@ -5,5 +32,9 @@
   &--active {
     fill: @red;
     opacity: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

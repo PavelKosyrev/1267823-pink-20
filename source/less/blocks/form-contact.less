@@ -2,13 +2,29 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @border-gray;
+    border-radius: 1px;
+  }
 }
 
 .form-contact__legend {
   padding: 0;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @red;
 
   &--mobile {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
   }
 }
 
@@ -20,15 +36,23 @@
   list-style: none;
 }
 
+.form-contact__item {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .form-contact__label {
   line-height: 30px;
   text-transform: uppercase;
   color: @red;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .form-contact__input {
-  width: 100%;
   padding: 23px 20px;
   font-size: 18px;
   line-height: 30px;
