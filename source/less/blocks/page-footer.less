@@ -17,6 +17,8 @@
   margin-top: 40px;
   width: 145px;
   height: 40px;
+  fill: @gray;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin-top: 36px;
@@ -28,6 +30,14 @@
     height: 40px;
     margin-top: 70px;
     margin-bottom: 87px;
+  }
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   /*outline-offset: -5px;

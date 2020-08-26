@@ -1,24 +1,43 @@
 .research {
-  display: none;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: flex-end;
+  @media (min-width: @desktop-width) {
+    background-color: @light-gray;
   }
 }
 
+
 .research__wrapper {
-  width: 300px;
+  display: none;
+  background-image: url("../img/icon-timer.png");
+  background-repeat: no-repeat;
+  background-position: 0 54px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+  }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
+    display: grid;
+    grid-template-columns: 1fr 570px;
+    background-position: 0 17px;
   }
 
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.research__image {
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.research__description {
+  @media (min-width: @desktop-width) {
+    width: 530px;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 122, 0, 0.7);
 }
 
 .research__title {
@@ -57,7 +76,6 @@
   font-size: 14px;
   line-height: 24px;
   color: @red;
-  text-decoration: none;
 
   @media (min-width: @desktop-width) {
     padding-bottom: 120px;
