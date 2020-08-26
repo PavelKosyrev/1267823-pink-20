@@ -1,3 +1,9 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .photo__link {
   width: 280px;
   display: block;
@@ -11,15 +17,54 @@
   }
 }
 
+.photo__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 31px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+
+  &--top {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
 .photo__name-user {
   margin: 0;
 
   font-size: 14px;
   font-weight: 700;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .photo__data-comment {
   margin: 0;
+  padding-left: 3px;
 
   font-weight: 300;
   font-size: 12px;
@@ -28,6 +73,38 @@
 
 .photo__comment {
   margin: 0;
+  margin-bottom: 27px;
+
+
+  &--top {
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      order: 1;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 31px;
+    }
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+}
+
+
+.photo__like {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 122, 0, 0.7);
 }
 
 .photo__like-text,
@@ -38,4 +115,25 @@
   text-transform: uppercase;
 
   color: @red;
+}
+
+.photo__like-text {
+  margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+
+  &--top {
+    margin-right: 16px;
+  }
+}
+
+.photo__heart {
+  width: 13px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  cursor: pointer;
+  border: none;
 }

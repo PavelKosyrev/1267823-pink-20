@@ -1,0 +1,41 @@
+
+.slider__list {
+  position: relative;
+}
+
+.slider__item {
+  &:not(.slider__item--active) {
+    display: none;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+}
+
+.slider__toggle {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin-right: 19px;
+
+  background-color: @gray;
+  opacity: 0.3;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--active {
+    background-color: @white;
+    border: 3px solid @gray;
+    padding: 3px;
+    opacity: 1;
+    margin-right: 16px;
+    cursor: default;
+  }
+}

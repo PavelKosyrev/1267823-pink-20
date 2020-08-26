@@ -17,5 +17,15 @@
 }
 
 .copyright__link {
+  fill: @red;
   text-decoration: none;
+
+  &:hover {
+    fill: @gray;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+    fill: @gray;
+  }
 }

@@ -1,45 +1,29 @@
 .advantages {
   background-color: @light-gray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .advantages__wrapper {
   text-align: center;
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-}
 
-.advantages__tagline {
-  margin: 0;
-  padding-top: 46px;
-
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% ~"calc(100% + 43px)";
 
   @media (min-width: @tablet-width) {
-    font-size: 40px;
-    line-height: 54px;
-
-    &--up {
-      padding-top: 58px;
-    }
-
-    &--down {
-      padding-top: 0;
-    }
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 20px 100%;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 50px;
-    line-height: 68px;
-
-    &--up {
-      padding-top: 77px;
-    }
+    background-image: none;
   }
 
   outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .advantages__list {
@@ -47,7 +31,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 123px;
+  padding-top: 123px;
   padding-bottom: 325px;
 
   list-style: none;
@@ -56,7 +40,7 @@
     text-align: left;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 122px;
+    padding-top: 122px;
     padding-bottom: 0;
   }
 
@@ -65,7 +49,7 @@
     justify-content: space-around;
     align-items: stretch;
     text-align: center;
-    margin-top: 432px;
+    padding-top: 0;
   }
 
 
@@ -80,6 +64,25 @@
 
   @media (min-width: @desktop-width) {
     width: 240px;
+    padding-top: 432px;
+
+    &:first-child {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 72px;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 72px;
+    }
+
+    &:last-child {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: center 72px;
+    }
   }
 }
 
@@ -96,6 +99,9 @@
     line-height: 30px;
     margin-bottom: 35px;
   }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .advantages__description {
@@ -111,4 +117,7 @@
     line-height: 30px;
     margin-bottom: 59px;
   }
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }

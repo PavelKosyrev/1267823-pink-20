@@ -124,3 +124,14 @@
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
 }
+
+.application__button {
+  &:hover {
+    color: @red;
+    background-color: @white;
+  }
+
+  &:active {
+    color: fade(@red, 30%);
+  }
+}

@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
 
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
   }
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .user-form__footnote {
@@ -33,10 +33,12 @@
 
 .user-form__achievements {
   order: 2;
+  background-color: @light-gray;
 
   @media (min-width: @tablet-width) {
     order: 4;
     width: 100%;
+    background-color: @white;
   }
 }
 
@@ -52,14 +54,15 @@
 
 .user-form__applications {
   order: 4;
+  background-color: @light-gray;
 
   @media (min-width: @tablet-width) {
     order: 2;
+    background-color: @white;
   }
 
   @media (min-width: @desktop-width) {
     width: 435px;
-    box-sizing: border-box;
   }
 }
 
@@ -79,6 +82,21 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.user-form__wrapper__container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 100%;
   }
 }

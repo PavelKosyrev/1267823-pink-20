@@ -1,3 +1,11 @@
+.price {
+  background-color: @light-gray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .price__wrapper {
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
@@ -7,4 +15,14 @@
 
 .price__toggles {
   margin: 0;
+  padding-top: 42px;
+  padding-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
