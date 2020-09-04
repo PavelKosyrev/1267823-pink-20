@@ -1,3 +1,6 @@
+.slider {
+  position: relative;
+}
 
 .slider__list {
   position: relative;
@@ -37,5 +40,31 @@
     opacity: 1;
     margin-right: 16px;
     cursor: default;
+  }
+}
+
+.slider__toggles-desktop {
+  justify-content: space-between;
+}
+
+.slider__toggle-desktop {
+  padding: 0;
+  width: 22px;
+  height: 41px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  fill: @gray;
+  fill-opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    fill-opacity: 0.6;
+  }
+
+  &:active {
+    fill-opacity: 0.1;
   }
 }

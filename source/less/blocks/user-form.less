@@ -1,6 +1,13 @@
 .user-form__wrapper {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    padding: 0 20px;
+  }
 
 
   @media (min-width: @desktop-width) {
@@ -8,8 +15,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 960px;
-    margin: 0 auto;
+    padding: 0 10px;
   }
+
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(122, 255, 0, 0.7);
 }
 
 .user-form__footnote {
@@ -82,21 +93,38 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 }
 
 .user-form__wrapper__container {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  @media (max-width: 600px) {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.user-form__button {
+  height: 59px;
+  width: 100%;
+
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: @white;
+  background: @green;
+  border: none;
+  border-radius: 2px;
+  outline: none;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 296px;
   }
 }

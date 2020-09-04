@@ -84,76 +84,67 @@
                 </ul>
               </section>
             </div>
-            <div class="user-form__achievements">
-              <fieldset class="checkbox user-form__wrapper__container">
+              <div class="user-form__achievements">
+                <fieldset class="checkbox user-form__wrapper__container">
                   <legend class="checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
                   <ul class="checkbox__list">
                     <li class="checkbox__item">
-                      <label class="checkbox__label">Сделал селфи с акулой
-                        <input class="checkbox__input" type="checkbox" name="achievements[]" value="shark" checked>
-                      </label>
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="shark" name="achievements[]" value="shark" checked>
+                      <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
                     </li>
                     <li class="checkbox__item">
-                      <label class="checkbox__label">Обгорел на пляже
-                        <input class="checkbox__input" type="checkbox" name="achievements[]" value="beach" checked>
-                      </label>
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="beach" name="achievements[]" value="beach" checked>
+                      <label class="checkbox__label" for="beach">Обгорел на пляже</label>
                     </li>
                     <li class="checkbox__item">
-                      <label class="checkbox__label">Видел Чака Норриса
-                        <input class="checkbox__input" type="checkbox" name="achievements[]" value="сhuck">
-                      </label>
-                    </li>
-                      <li class="checkbox__item">
-                      <label class="checkbox__label">Накупил сувениров
-                        <input class="checkbox__input" type="checkbox" name="achievements[]" value="souvenir">
-                      </label>
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="сhuck" name="achievements[]" value="сhuck">
+                      <label class="checkbox__label" for="сhuck">Видел Чака Норриса</label>
                     </li>
                     <li class="checkbox__item">
-                      <label class="checkbox__label">Удержал башню
-                        <input class="checkbox__input" type="checkbox" name="achievements[]" value="tower" checked>
-                      </label>
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="souvenir" name="achievements[]" value="souvenir">
+                      <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
                     </li>
                     <li class="checkbox__item">
-                      <label class="checkbox__label">Разгромил отель
-                      <input class="checkbox__input" type="checkbox" name="achievements[]" value="hotel">
-                      </label>
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="tower" name="achievements[]" value="tower" checked>
+                      <label class="checkbox__label" for="tower">Удержал башню</label>
+                    </li>
+                    <li class="checkbox__item">
+                      <input class="checkbox__input visually-hidden" type="checkbox" id="hotel" name="achievements[]" value="hotel">
+                      <label class="checkbox__label" for="hotel">Разгромил отель</label>
                     </li>
                   </ul>
               </fieldset>
             </div>
-            <div class="user-form__contacts">
-              <fieldset  class="form-contact user-form__wrapper__container">
-                <legend class="form-contact__legend form-contact__legend--mobile">Контактная информация</legend>
-                <ul class="form-contact__list">
-                  <li class="form-contact__item">
-                    <label class="form-contact__label" for="tel">Номер телефона</label>
-                    <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-                  </li>
-                  <li class="form-contact__item">
-                    <label class="form-contact__label" for="email">Адрес почты</label>
-                    <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите почту*">
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="user-form__contacts">
+                <fieldset  class="form-contact user-form__wrapper__container">
+                  <legend class="form-contact__legend form-contact__legend--mobile">Контактная информация</legend>
+                  <ul class="form-contact__list">
+                    <li class="form-contact__item form-contact__item--phone">
+                      <label class="form-contact__label" for="tel">Номер телефона</label>
+                      <input class="form-contact__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                    </li>
+                    <li class="form-contact__item form-contact__item--email">
+                      <label class="form-contact__label" for="email">Адрес почты</label>
+                      <input class="form-contact__input" type="email" name="email" id="email" placeholder="Введите почту *">
+                    </li>
+                  </ul>
+                </fieldset>
             </div>
             <div class="user-form__applications">
               <fieldset  class="radio user-form__wrapper__container">
                 <legend class="radio__legend">С каким приложением путешествовали?</legend>
                 <ul class="radio__list">
                   <li class="radio__item">
-                    <label class="radio__label">Pink для iOS
-                      <input class="radio__input" type="radio" name="application" id="application-ios" value="ios" checked>
-                    </label>
+                    <input class="radio__input visually-hidden" type="radio" name="application" id="application-ios" value="ios" checked>
+                    <label class="radio__label" for="application-ios">Pink для iOS</label>
                   </li>
                   <li class="radio__item">
-                    <label class="radio__label">Pink на Android
-                      <input class="radio__input" type="radio" name="application" id="application-android" value="android">
-                    </label>
+                    <input class="radio__input visually-hidden" type="radio" name="application" id="application-android" value="android">
+                    <label class="radio__label" for="application-android">Pink на Android</label>
                   </li>
                   <li class="radio__item">
-                    <label class="radio__label">Windows Phone
-                      <input class="radio__input" type="radio" name="application" id="application-windows" value="windows">
-                    </label>
+                    <input class="radio__input visually-hidden" type="radio" name="application" id="application-windows" value="windows">
+                    <label class="radio__label" for="application-windows">Windows Phone</label>
                   </li>
                 </ul>
               </fieldset>

@@ -10,6 +10,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -51,6 +52,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    padding-bottom: 41px;
   }
 
   outline-offset: -5px;
@@ -70,6 +72,11 @@
   @media (min-width: @desktop-width) {
     padding-top: 193px;
     padding-bottom: 50px;
+    width: 687px;
+    text-align: center;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 72px;
   }
 
   outline-offset: -5px;
@@ -86,6 +93,24 @@
     padding-bottom: 0;
   }
 
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
   outline-offset: -5px;
   outline: 5px solid rgba(102, 255, 0, 0.7);
+}
+
+.reviews__toggles-desktop {
+  margin: 0;
+  display: none;
+
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: flex;
+    top: 213px;
+    left: 20px;
+    right: 20px;
+  }
 }

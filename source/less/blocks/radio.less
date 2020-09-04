@@ -1,5 +1,7 @@
 .radio {
   border: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     border: 2px solid @border-gray;
@@ -12,6 +14,8 @@
 
 .radio__legend {
   padding: 0;
+  padding-right: 31px;
+  padding-left: 31px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -21,11 +25,87 @@
 .radio__list {
   margin: 0;
   padding: 0;
-
+  padding-top: 40px;
+  padding-bottom: 48px;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 52px;
+  }
+}
+
+.radio__item {
+  padding-bottom: 51px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 
 .radio__label {
+  position: relative;
+  padding-left: 70px;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 133px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 37px;
+    height: 37px;
+    background: @white;
+    border: 2px solid @border-gray;
+    border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      left: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 72px;
+    }
+  }
+
+  &:hover::before {
+    border-color: @gray;
+  }
+
+  &:active::before {
+    border-color: @red;
+  }
+}
+
+.radio__input {
+  &:checked + .radio__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    width: 15px;
+    height: 15px;
+    background: @red;
+    border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      left: 71px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 85px;
+    }
+  }
 }
