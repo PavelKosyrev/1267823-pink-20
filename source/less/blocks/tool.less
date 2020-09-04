@@ -3,38 +3,133 @@
   flex-direction: column;
   align-items: center;
 
-  outline-offset: -5px;
-  outline: 5px solid rgba(122, 255, 0, 0.7);
+  @media (min-width: @tablet-width) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
 }
 
-.tool__range-wrapper {
+
+.tool__list {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 42px;
+  padding-bottom: 39px;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.tool__item {
+  padding-right: 35px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    height: 70px;
+    box-sizing: border-box;
+    border-bottom: 1px solid fade(@gray, 10%);
+  }
+
+  @media (min-width: @desktop-width) {
+    &:last-of-type {
+      border: none;
+    }
+  }
 }
 
 .tool__range {
+  position: absolute;
   display: none;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  -webkit-appearance: none;
+  width: 240px;
+  height: 2px;
+  outline: none;
+  background-color: @gray;
 
   &--active {
     display: block;
   }
 
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: @white;
+    border-radius: 50%;
+    border: 2px solid @red;
+    cursor: pointer;
+
+    &:active {
+      background-color: @red;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
+    width: 202px;
+    bottom: 50%;
+    transform: translateX(0);
+    right: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 288px;
+    bottom: 50%;
+    right: 30px;
   }
 }
 
 .tool__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
   fill: @gray;
-  opacity: 0.3;
+  fill-opacity: 0.3;
 
   &--active {
     fill: @red;
-    opacity: 1;
+    fill-opacity: 1;
+  }
+
+  &:not(.tool__button--active):hover {
+    fill: @gray;
+    fill-opacity: 0.5;
   }
 
   @media (min-width: @tablet-width) {
-    display: none;
+    fill: @red;
+    fill-opacity: 1;
   }
 }

@@ -171,48 +171,60 @@
         </div>
       </section>
       <section class="photo-editor">
-        <div class="photo-editor__wrapper container">
-          <h2 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-          <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-            <div class="photo-editor__input">
-              <label class="photo-editor__form"  for="image" aria-label="Выберите файл"></label>
-              <input  class="visually-hidden" type="file" name="image" id="image">
-            </div>
-            <div class="photo-editor__tools tool">
-              <div class="tool__wrapper">
-                <button class="tool__button tool__button--active" type="button" aria-label="Обрезать фото">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                  </svg>
-                </button>
-                <button class="tool__button" type="button" aria-label="Добавить фильтр">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                    <path fill="none" d="M0,0h48v48H0V0z"/>
-                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                    <rect y="40" width="48" height="3"/>
-                  </svg>
-                </button>
-                <button class="tool__button" type="button" aria-label="Изменить контраст">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                  </svg>
-                </button>
+        <div class="container">
+          <h2 class="photo-editor__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+          <div class="photo-editor__wrapper">
+            <div class="container">
+              <div class="photo-editor__form-wrapper ">
+                <div class="photo-editor__input">
+                  <label class="photo-editor__form"  for="image" aria-label="Выберите файл"></label>
+                  <input  class="visually-hidden" type="file" name="image" id="image">
+                </div>
+                <div class="photo-editor__tools tool">
+                  <ul class="tool__list">
+                    <li class="tool__item">
+                      <button class="tool__button tool__button--active" type="button" aria-label="Обрезать фото">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                        </svg>
+                      </button>
+                      <label aria-label="Ползунок для регулирования">
+                        <input class="tool__range tool__range--active" type="range" name="toggle">
+                      </label>
+                    </li>
+                    <li class="tool__item">
+                      <button class="tool__button" type="button" aria-label="Добавить фильтр">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                          <path fill="none" d="M0,0h48v48H0V0z"/>
+                          <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                          <rect y="40" width="48" height="3"/>
+                        </svg>
+                      </button>
+                      <label aria-label="Ползунок для регулирования">
+                        <input class="tool__range" type="range" name="toggle">
+                      </label>
+                    </li>
+                    <li class="tool__item">
+                      <button class="tool__button" type="button" aria-label="Изменить контраст">
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                          <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                          <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                        </svg>
+                      </button>
+                      <label aria-label="Ползунок для регулирования">
+                        <input class="tool__range" type="range" name="toggle">
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="photo-editor__button-wrapper">
+                    <button class="photo-editor__button" type="submit">Запостить</button>
+                    <button class="photo-editor__button photo-editor__button--disabled" type="submit">Отмена</button>
+                  </div>
+                <div>
               </div>
-              <div class="tool__range-wrapper">
-                <label aria-label="Ползунок для регулирования">
-                  <input class="tool__range tool__range--active" type="range" name="toggle">
-                </label>
-                <label aria-label="Ползунок для регулирования">
-                  <input class="tool__range" type="range" name="toggle">
-                </label>
-                <label aria-label="Ползунок для регулирования">
-                  <input class="tool__range" type="range" name="toggle">
-                </label>
-              </div>
-              <button class="photo-editor__button button" type="submit">Запостить</button>
-              <button class="photo-editor__button button" type="reset">Отмена</button>
             </div>
           </form>
         </div>

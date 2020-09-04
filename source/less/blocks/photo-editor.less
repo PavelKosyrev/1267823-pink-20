@@ -1,29 +1,73 @@
 .photo-editor__wrapper {
+  background-color: @light-gray;
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+  }
+}
+
+
+.photo-editor__form-wrapper {
   display: flex;
   flex-direction: column;
+
+  padding-top: 57px;
+  padding-bottom: 54px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    padding-top: 57px;
+    padding-bottom: 41px;
   }
 
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+
+    background-color: @light-gray;
+  }
 }
 
 .photo-editor__title {
   margin: 0;
+  padding-top: 41px;
+  padding-bottom: 44px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 72px;
     width: 100%;
   }
 
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
+  @media (min-width: @desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 69px;
+  }
+}
+
+
+.photo-editor__input {
+  background-image: url("../img/photo-road-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo-road-desktop@1x.jpg");
+  }
 }
 
 .photo-editor__form {
@@ -35,16 +79,96 @@
     width: 300px;
     height: 400px;
   }
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(122, 100, 255, 0.7);
 }
 
 .photo-editor__tools {
   @media (min-width: @tablet-width) {
-    width: 300px;
+    width: 275px;
   }
 
-  outline-offset: -5px;
-  outline: 5px solid rgba(122, 255, 0, 0.7);
+  @media (min-width: @desktop-width) {
+    width: 410px;
+  }
+}
+
+.photo-editor__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+  padding-top: 38px;
+  border-top: 1px solid fade(@gray, 10%);
+
+  @media (min-width: @tablet-width) {
+    margin-top: 67px;
+    border: none;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+
+.photo-editor__button {
+  margin-bottom: 12px;
+  height: 55px;
+  width: 280px;
+
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  color: @red;
+  background-color: transparent;
+  border: 3px solid @red;
+  border-radius: 30px;
+  outline: none;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 183px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: @red;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @red;
+    color: fade(@white, 30%);
+  }
+
+  &--disabled {
+    color: @gray;
+    opacity: 0.1;
+    border: 3px solid @gray;
+
+    &:hover {
+      opacity: 0.3;
+      background-color: @white;
+      color: @gray;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: @gray;
+      color: fade(@white, 30%);
+    }
+  }
 }
