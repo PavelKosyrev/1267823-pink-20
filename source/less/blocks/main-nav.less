@@ -20,7 +20,7 @@
     box-sizing: border-box;
     width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -36,6 +36,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    top: 43px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -70,6 +74,10 @@
   top: 23px;
   width: 23px;
   height: 23px;
+
+  @media (min-width: @tablet-width) {
+    top: 43px;
+  }
 
   &::before,
   &::after {

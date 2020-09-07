@@ -9,10 +9,12 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+
     flex-wrap: wrap;
     width: 640px;
-    /*outline-offset: -5px;
-      outline: 5px solid rgba(255, 0, 255, 0.7);*/
+    outline-offset: -5px;
+    outline: 5px solid rgba(255, 0, 255, 0.7);
   }
 }
 
@@ -37,8 +39,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 48px;
-    padding-bottom: 49px;
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -46,7 +48,7 @@
     &:not([href])::after {
       content: "";
       position: absolute;
-      bottom: 34px;
+      top: 31px;
       right: 0;
       left: 0;
       height: 2px;

@@ -5,15 +5,32 @@
 
 
 .photo__link {
-  width: 280px;
+  position: relative;
   display: block;
   text-decoration: none;
+}
+
+.photo__image {
+  display: block;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 
   &--top {
-    width: 320px;
     position: relative;
+    width: 320px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: @tablet-width) {
+      width: 660px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
   }
 }
 
@@ -136,4 +153,34 @@
   background-image: url("../img/icon-heart.svg");
   cursor: pointer;
   border: none;
+}
+
+.photo__text-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin: 0;
+  padding-left: 19px;
+  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-right: 20px;
+
+  color: @white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: @red;
+
+  z-index: 1000;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+  }
 }
