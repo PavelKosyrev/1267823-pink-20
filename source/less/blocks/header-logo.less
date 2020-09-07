@@ -1,0 +1,54 @@
+.header-logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+  fill: @white;
+  color: @red;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  &[href]:hover {
+    fill: @red;
+  }
+
+  &[href]:active {
+    fill: fade(@white, 30%);
+    color: fade(@white, 30%);
+  }
+}
+
+.header-logo__image {
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}

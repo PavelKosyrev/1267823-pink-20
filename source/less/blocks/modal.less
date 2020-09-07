@@ -1,0 +1,174 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 320px;
+  z-index: 1001;
+
+  text-align: center;
+
+  background-color: @white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  &--error {
+    display: none;
+  }
+
+  &--sent {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 34px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 29px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: @gray;
+
+  &--sent {
+    padding-bottom: 43px;
+  }
+
+  &--error {
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    &--sent {
+      padding-bottom: 35px;
+    }
+
+    &--error {
+      padding-bottom: 32px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 200px;
+    padding-left: 200px;
+
+    &--sent {
+      padding-bottom: 41px;
+    }
+
+    &--error {
+      padding-bottom: 65px;
+    }
+  }
+}
+
+.modal__button-wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  &--error {
+    padding-bottom: 50px;
+  }
+
+  &--sent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: @light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: @light-gray;
+  }
+}
+
+.modal__button {
+  height: 63px;
+  width: 280px;
+
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: @white;
+  background: @green;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+
+  cursor: pointer;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--sent {
+      width: 460px;
+    }
+  }
+
+  &:hover {
+    background-color: @dark-green;
+  }
+
+  &:active {
+    background-color: @dark-green;
+    color: fade(@white, 30%);
+  }
+}

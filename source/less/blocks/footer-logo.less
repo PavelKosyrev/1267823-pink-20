@@ -1,0 +1,37 @@
+.footer-logo {
+  display: block;
+  width: 145px;
+  height: 40px;
+  fill: @gray;
+  cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: @gray;
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__image {
+  &--mobile {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
