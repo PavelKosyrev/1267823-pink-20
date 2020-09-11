@@ -76,22 +76,6 @@
         </div>
       </section>
     </header>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
     <main class="page-main">
       <div class="page-main__title-wrapper container">
         <p class="page-main__title-index">Устали от серости мегаполиса?</p>
@@ -107,7 +91,8 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить&nbsp;эффект</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -120,8 +105,8 @@
         <div class="research__wrapper container">
           <div class="research__image"></div>
           <div class="research__description">
-            <h2 class="research__title">Эффект на 24 часа!</h2>
-            <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
+            <p class="research__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
             <a class="research__more" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -198,9 +183,9 @@
             </tr>
             <tr class="table-price__line">
               <td class="table-price__cell">Комментарии</td>
+              <td class="table-price__cell table-price__cell--off"><span class="table-price__cell--mobile">Комментарии</span></td>
               <td class="table-price__cell table-price__cell--off"><span class="table-price__cell--mobile">Комментари</span></td>
-              <td class="table-price__cell table-price__cell--off"><span class="table-price__cell--mobile">Комментари</span></td>
-              <td class="table-price__cell table-price__cell--on"><span class="table-price__cell--mobile">Комментари</span></td>
+              <td class="table-price__cell table-price__cell--on"><span class="table-price__cell--mobile">Комментарии</span></td>
             </tr>
           </table>
           <p class="price__toggles slider__toggles">
@@ -216,7 +201,7 @@
           <ul class="contacts__list">
             <li class="contacts__item contact">
               <span class="contact__text">Звоните:</span>
-              <a class="contact__item" href="tel:78125556666">+7 (812) 275-75-75</a>
+              <a class="contact__item" href="tel:78125556666">+7(812) 555-66-66</a>
             </li>
             <li class="contacts__item contact">
               <span class="contact__text">Пишите:</span>
@@ -283,5 +268,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

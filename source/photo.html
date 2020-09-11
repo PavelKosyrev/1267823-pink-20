@@ -48,22 +48,6 @@
         </div>
       </div>
     </header>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
     <main class="page-main">
       <div class="page-main__title-wrapper container">
         <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -82,7 +66,7 @@
             </a>
             <div class="photo__content photo__content--top">
               <h3 class="photo__name-user">Анна<span class="photo__data-comment">(5 минут назад)</span></h3>
-              <p class="photo__comment photo__comment--top">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photo__comment photo__comment--top">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы</p>
               <div class="photo__like photo__like--top">
                 <button class="photo__heart" type="button" aria-label="Нажать мне нравится"></button>
                 <span class="photo__like-text  photo__like-text--top">Нравится:
@@ -232,7 +216,7 @@
                       </button>
                       <div class="tool__range tool__range--active">
                         <div class="tool__range-scale"></div>
-                        <button class="tool__range-button" type="button" aria-label="Ползунок"></button>
+                        <button class="tool__range-button tool__range-button--crop" type="button" aria-label="Ползунок"></button>
                       </div>
                     </li>
                     <li class="tool__item">
@@ -246,7 +230,7 @@
                       </button>
                       <div class="tool__range">
                         <div class="tool__range-scale"></div>
-                        <button class="tool__range-button" type="button" aria-label="Ползунок"></button>
+                        <button class="tool__range-button tool__range-button--fill" type="button" aria-label="Ползунок"></button>
                       </div>
                     </li>
                     <li class="tool__item">
@@ -260,7 +244,7 @@
                       </button>
                       <div class="tool__range">
                         <div class="tool__range-scale"></div>
-                        <button class="tool__range-button" type="button" aria-label="Ползунок"></button>
+                        <button class="tool__range-button tool__range-button--contrast" type="button" aria-label="Ползунок"></button>
                       </div>
                     </li>
                   </ul>
@@ -321,4 +305,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/menu.js"></script>
 </html>

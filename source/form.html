@@ -48,22 +48,6 @@
         </div>
       </div>
     </header>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
     <main class="page-main">
       <div class="page-main__title-wrapper container">
         <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -230,5 +214,6 @@
         <button class="modal__button modal__button--sent" type="button">Закрыть окно</button>
       </div>
     </section>
+    <script src="js/menu.js"></script>
   </body>
 </html>

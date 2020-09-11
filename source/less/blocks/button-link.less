@@ -1,23 +1,29 @@
 .button-link {
   display: inline-block;
   vertical-align: top;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-right: 35px;
-  padding-left: 36px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  width: 280px;
+  box-sizing: border-box;
 
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   text-decoration: none;
   border-radius: 29px;
+  text-align: center;
 
   &--white {
     color: @white;
     border: 3px solid @white;
   }
 
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
   @media (min-width: @desktop-width) {
+
     font-size: 21px;
     padding-top: 17px;
     padding-bottom: 17px;

@@ -31,9 +31,6 @@
   @media (min-width: @desktop-width) {
     background-image: none;
   }
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .advantages__list {
@@ -50,21 +47,19 @@
     text-align: left;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 122px;
-    padding-bottom: 0;
+    padding-top: 105px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
     align-items: stretch;
     text-align: center;
     padding-top: 0;
   }
-
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .advantages__item {
@@ -74,13 +69,14 @@
 
   @media (min-width: @desktop-width) {
     width: 240px;
-    padding-top: 432px;
+    padding-top: 415px;
+
+    background-position: center 55px;
+    background-size: 292px auto;
+    background-repeat: no-repeat;
 
     &:first-child {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center 72px;
-      background-size: 292px auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-1-desktop@2x.png");
@@ -89,9 +85,6 @@
 
     &:nth-child(2) {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center 72px;
-      background-size: 292px auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-2-desktop@2x.png");
@@ -100,9 +93,6 @@
 
     &:last-child {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-position: center 72px;
-      background-size: 292px auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
@@ -110,7 +100,6 @@
     }
   }
 }
-
 
 .advantages__title {
   margin: 0;
@@ -122,11 +111,8 @@
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
   }
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .advantages__description {
@@ -134,7 +120,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -142,7 +128,4 @@
     line-height: 30px;
     margin-bottom: 59px;
   }
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }

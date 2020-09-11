@@ -9,7 +9,15 @@
 }
 
 .social__item {
-  margin-right: 11px;
+  margin-right: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
+  }
 
   &:last-child {
     margin-right: 0;
