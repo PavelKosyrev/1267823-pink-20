@@ -48,7 +48,7 @@
     width: 660px;
     height: 545px;
     bottom: 0;
-    left: -20px;
+    left: -42px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px;
     background-position: 0 0;
@@ -112,20 +112,21 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 208px;
+    padding-top: 205px;
     padding-bottom: 0;
+    padding-left: 50px;
+    width: 200px;
     font-size: 40px;
     line-height: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 215px;
+    padding-top: 209px;
+    width: 300px;
+    padding-left: 0;
     font-size: 50px;
     line-height: 68px;
   }
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
 }
 
 .application__list {
@@ -138,22 +139,19 @@
   padding: 0;
 
   margin-top: 32px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-top: 46px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 67px;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
   }
 
   list-style: none;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .application__item {
@@ -168,42 +166,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
 }
 
 .application__footnote {
   margin: 0;
   padding-bottom: 32px;
 
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+
   @media (min-width: @tablet-width) {
-    padding-bottom: 119px;
+    padding-bottom: 112px;
+    font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 127px;
   }
 
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-
   color: @white;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .application__button {
-  margin-top: 27px;
+  margin-top: 31px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 35px;
+    margin-top: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 42px;
+    margin-top: 36px;
   }
 
   &:hover {
