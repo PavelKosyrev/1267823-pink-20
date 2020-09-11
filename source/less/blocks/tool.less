@@ -12,7 +12,6 @@
   }
 }
 
-
 .tool__list {
   position: relative;
   display: flex;
@@ -30,7 +29,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    margin-top: 0;
+    margin-top: -14px;
     padding: 0;
     width: 100%;
   }
@@ -49,7 +48,7 @@
     align-items: center;
     width: 100%;
     padding-right: 0;
-    height: 70px;
+    height: 71px;
     box-sizing: border-box;
     border-bottom: 1px solid fade(@gray, 10%);
   }
@@ -103,7 +102,36 @@
 .tool__range-button {
   position: absolute;
   top: 50%;
-  left: 24%;
+  left: 27%;
+
+  @media (min-width: @tablet-width) {
+    &--fill {
+      left: 12%;
+    }
+
+    &--crop {
+      left: 72%;
+    }
+
+    &--contrast {
+      left: 48%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--fill {
+      left: 86%;
+    }
+
+    &--crop {
+      left: 24%;
+    }
+
+    &--contrast {
+      left: 55%;
+    }
+  }
+
   transform: translateY(-50%);
 
   width: 14px;
@@ -148,6 +176,11 @@
   @media (min-width: @tablet-width) {
     fill: @red;
     fill-opacity: 1;
+
+    &:hover {
+      fill: @gray;
+      fill-opacity: 0.5;
+    }
   }
 }
 
