@@ -103,9 +103,21 @@ exports.clean = clean;
 const build = gulp.series(
   clean,
   copy,
-  styles,
-  sprite,
-  html
+  gulp.parallel(
+    styles,
+    sprite,
+    html
+  )
 );
 
 exports.build = build;
+
+// Start
+
+const start = gulp.series(
+  build,
+  server,
+  watcher
+);
+
+exports.start = start;
