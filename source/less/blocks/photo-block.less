@@ -1,3 +1,16 @@
+.photo-block {
+  margin-top: 51px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 90px;
+  }
+}
+
+
 .photo-block__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -7,11 +20,17 @@
 }
 
 .photo-block__item {
-  background-color: @light-gray;
+  position: relative;
   margin-bottom: 20px;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  &--top {
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -26,12 +45,15 @@
     &--top {
       width: 100%;
       min-height: 630px;
-      margin-bottom: 50px;
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
     min-height: 555px;
 
     &:last-of-type {
@@ -40,7 +62,10 @@
 
     &--top {
       min-height: 602px;
-      margin-bottom: 50px;
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
     }
   }
 }

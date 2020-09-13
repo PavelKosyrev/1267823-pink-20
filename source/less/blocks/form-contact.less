@@ -6,7 +6,7 @@
 
   @media (min-width: @tablet-width) {
     border: 2px solid @border-gray;
-    border-radius: 1px;
+    border-radius: 3px;
   }
 }
 
@@ -21,10 +21,15 @@
 
   &--mobile {
     display: none;
+  }
 
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -36,18 +41,16 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 59px;
+    padding-left: 59px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-top: 31px;
-    margin-bottom: 15px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 
@@ -56,6 +59,7 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  padding-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     &::after {
@@ -68,6 +72,7 @@
       background-color: @border-gray;
       background-repeat: no-repeat;
       background-position: center;
+      z-index: -1;
     }
 
     &--phone::after {
@@ -89,8 +94,19 @@
   text-transform: uppercase;
   color: @red;
 
+  padding-left: 23px;
+  padding-bottom: 6px;
+
   @media (min-width: @tablet-width) {
     order: 2;
+    padding-left: 18px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 12px;
+    padding-bottom: 0;
   }
 }
 
@@ -98,14 +114,27 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  min-height: 63px;
+  min-height: 62px;
+  padding-right: 20px;
+  padding-left: 20px;
   border: 2px solid @border-gray;
-  border-radius: 1px;
+  border-radius: 3px;
   font: inherit;
   font-size: 18px;
   line-height: 30px;
+  background-color: transparent;
 
   &::-webkit-input-placeholder {
     color: @gray;
+  }
+
+  &:hover {
+    border: 2px solid @gray;
+  }
+
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid @red;
   }
 }

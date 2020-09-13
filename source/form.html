@@ -13,7 +13,7 @@
           <div class="main-nav__wrapper">
             <div class="page-header__logo-wrapper">
               <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-                <svg class="header-logo__image header-logo__image--mobile" class="page-header__logo-item" width="74" height="23">
+                <svg class="header-logo__image header-logo__image--mobile" width="74" height="23">
                   <use xlink:href="img/sprite.svg#icon-login-mobile"></use>
                 </svg>
                 <svg class="header-logo__image header-logo__image--tablet" width="145" height="40">
@@ -39,8 +39,8 @@
                 <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
       <div class="page-header__title-wrapper">
         <div class="container">
@@ -50,11 +50,11 @@
     </header>
     <main class="page-main">
       <div class="page-main__title-wrapper container">
-        <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          <span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>
+        <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!&thinsp;<span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
       <section class="user-form">
+        <h2 class="visually-hidden">Форма для заполнения</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="user-form__wrapper">
             <div class="user-form__name">
@@ -63,11 +63,11 @@
                 <ul class="name__list">
                   <li class="name__item">
                     <label class="name__label" for="surname">Фамилия:</label>
-                    <input class="name__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                    <input class="name__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
                   </li>
                   <li class="name__item">
                     <label class="name__label" for="name">Имя:</label>
-                    <input class="name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+                    <input class="name__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
                   </li>
                   <li class="name__item">
                     <label class="name__label" for="patronymic">Отчество:</label>
@@ -149,7 +149,7 @@
             </div>
             <div class="user-form__submit user-form__wrapper__container">
               <button class="user-form__button" type="submit">Отправить форму</button>
-              <small class="user-form__footnote"><span class="user-form__footnote--star">*</span> — обязательные поля</small>
+              <small class="user-form__footnote"><span class="user-form__footnote--star">*</span> — обязательные<span class="only-desktop">&thinsp;для заполения</span>&thinsp;поля</small>
             </div>
           </div>
         </form>
@@ -166,6 +166,7 @@
           </svg>
         </a>
         <section class="page-footer__social social">
+          <h2 class="visually-hidden">Ccылки на соцсети</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="twitter">
@@ -191,6 +192,7 @@
           </ul>
         </section>
         <section class="page-footer__copyright copyright">
+          <h2 class="visually-hidden">Ccылка на разработчика сайта</h2>
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <svg width="27" height="34">
