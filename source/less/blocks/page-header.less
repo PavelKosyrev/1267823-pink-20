@@ -59,7 +59,7 @@
 .page-header__title {
   margin: 0;
   padding-top: 94px;
-  padding-bottom: 77px;
+  min-height: 143px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -67,16 +67,16 @@
   color: @white;
 
   @media (min-width: @tablet-width) {
+    min-height: 264px;
     font-size: 50px;
     line-height: 68px;
     padding-top: 177px;
-    padding-bottom: 128px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 500px;
+    min-height: 227px;
+    max-width: 800px;
     margin: 0 auto;
     padding-top: 167px;
-    padding-bottom: 91px;
   }
 }

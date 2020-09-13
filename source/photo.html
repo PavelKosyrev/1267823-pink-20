@@ -13,7 +13,7 @@
           <div class="main-nav__wrapper">
             <div class="page-header__logo-wrapper">
               <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-                <svg class="header-logo__image header-logo__image--mobile" class="page-header__logo-item" width="74" height="23">
+                <svg class="header-logo__image header-logo__image--mobile" width="74" height="23">
                   <use xlink:href="img/sprite.svg#icon-login-mobile"></use>
                 </svg>
                 <svg class="header-logo__image header-logo__image--tablet" width="145" height="40">
@@ -39,33 +39,33 @@
                 <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
               </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
       <div class="page-header__title-wrapper">
         <div class="container">
-          <h1 class="page-header__title">Фотографии пользователей</h1>
+          <h1 class="page-header__title">Фотографии<br> пользователей</h1>
         </div>
       </div>
     </header>
     <main class="page-main">
       <div class="page-main__title-wrapper container">
-        <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="page-main__title page-main__title--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="photo-block">
-        <div class="photo-block__wrapper container">
-          <h2 class="visually-hidden">Галерея фотографий</h2>
-          <article class="photo-block__item photo-block__item--top photo">
-            <a class="photo__link photo__link--top" href="#">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Фото">
-              </picture>
-              <p class="photo__text-top">Панорама дня</p>
-            </a>
+        <h2 class="visually-hidden">Галерея фотографий</h2>
+        <article class="photo-block__item photo-block__item--top photo">
+          <a class="photo__link photo__link--top" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Фото">
+            </picture>
+          </a>
+          <div class="container">
             <div class="photo__content photo__content--top">
               <h3 class="photo__name-user">Анна<span class="photo__data-comment">(5 минут назад)</span></h3>
+              <p class="photo__text-top">Панорама дня</p>
               <p class="photo__comment photo__comment--top">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы</p>
               <div class="photo__like photo__like--top">
                 <button class="photo__heart" type="button" aria-label="Нажать мне нравится"></button>
@@ -74,7 +74,9 @@
                 </span>
               </div>
             </div>
-          </article>
+          </div>
+        </article>
+        <div class="photo-block__wrapper container">
           <article class="photo-block__item photo">
             <a class="photo__link" href="#">
               <picture>
@@ -198,7 +200,7 @@
         <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
           <div class="photo-editor__wrapper">
             <div class="container">
-              <div class="photo-editor__form-wrapper ">
+              <div class="photo-editor__form-wrapper">
                 <div class="photo-editor__input">
                   <label class="photo-editor__form"  for="image" aria-label="Выберите файл"></label>
                   <input  class="visually-hidden" type="file" name="image" id="image">
@@ -252,11 +254,11 @@
                     <button class="photo-editor__button" type="submit">Запостить</button>
                     <button class="photo-editor__button photo-editor__button--disabled" type="submit">Отмена</button>
                   </div>
-                <div>
+                </div>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -270,6 +272,7 @@
           </svg>
         </a>
         <section class="page-footer__social social">
+          <h2 class="visually-hidden">Ccылки на соцсети</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="twitter">
@@ -295,6 +298,7 @@
           </ul>
         </section>
         <section class="page-footer__copyright copyright">
+          <h2 class="visually-hidden">Ccылка на разработчика сайта</h2>
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <svg width="27" height="34">
@@ -304,6 +308,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
-  <script src="js/menu.js"></script>
 </html>
