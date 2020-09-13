@@ -1,24 +1,29 @@
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
   line-height: 30px;
   text-align: center;
 
+  &--photo {
+    max-width: 250px;
+  }
+
   @media (min-width: @tablet-width) {
-    padding-top: 90px;
-    padding-bottom: 79px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-top: 91px;
     font-size: 18px;
+    max-width: 490px;
+
+    &--photo {
+      max-width: 500px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 150px;
-    padding-left: 150px;
-    padding-bottom: 91px;
+    max-width: 800px;
+
+    &--photo {
+      max-width: 600px;
+    }
   }
 }
 

@@ -12,16 +12,17 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
-    padding-top: 56px;
+    padding-top: 54px;
   }
 
   &:first-of-type {
-    padding-top: 0;
+    padding-top: 13px;
   }
 }
 
 .name__label {
-  padding-bottom: 7px;
+  padding-bottom: 6px;
+  padding-left: 23px;
   line-height: 30px;
   text-transform: uppercase;
   color: @red;
@@ -29,20 +30,33 @@
   @media (min-width: @tablet-width) {
     padding-right: 18px;
     padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
 .name__input {
   flex-grow: 1;
   box-sizing: border-box;
-  min-height: 63px;
+  min-height: 62px;
+  padding-right: 20px;
+  padding-left: 20px;
   font: inherit;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid @border-gray;
-  border-radius: 1px;
+  border-radius: 3px;
 
   &::-webkit-input-placeholder {
     color: @gray;
+  }
+
+  &:hover {
+    border: 2px solid @gray;
+  }
+
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid @red;
   }
 }

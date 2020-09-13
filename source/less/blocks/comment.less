@@ -7,7 +7,7 @@
     padding-right: 60px;
     padding-left: 60px;
     border: 2px solid @border-gray;
-    border-radius: 1px;
+    border-radius: 3px;
   }
 }
 
@@ -22,14 +22,37 @@
 }
 
 .comment__text {
-  margin-top: 20px;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 400;
+  margin-top: 17px;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 30px;
   color: @gray;
   width: 100%;
   min-height: 197px;
-  padding: 23px 20px;
+  padding: 13px 20px;
   box-sizing: border-box;
   border: 2px solid @border-gray;
-  border-radius: 1px;
+  border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 124px;
+  }
+
+  &:hover {
+    border: 2px solid @gray;
+  }
+
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid @red;
+  }
 }
