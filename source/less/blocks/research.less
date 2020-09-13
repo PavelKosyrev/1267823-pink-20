@@ -68,13 +68,18 @@
 
 .research__more {
   display: block;
-  padding-bottom: 123px;
+  margin-bottom: 123px;
   font-size: 14px;
   line-height: 24px;
   color: @red;
 
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
     font-size: 18px;
     line-height: 30px;
   }

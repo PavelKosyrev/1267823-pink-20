@@ -68,6 +68,10 @@
 
 .main-nav--opened {
   background-color: @gray;
+
+  @media (min-width: @desktop-width) {
+    background-color: fade(@black, 30%);
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
