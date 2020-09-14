@@ -14,6 +14,23 @@
     flex-wrap: wrap;
     width: 640px;
   }
+
+  &--js {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+    @media (min-width: @tablet-width) {
+      top: 109px
+    }
+
+    @media (min-width: @desktop-width) {
+      position: static;
+      transform: none;
+    }
+  }
 }
 
 .site-list__link {
