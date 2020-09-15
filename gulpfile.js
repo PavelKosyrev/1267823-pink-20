@@ -9,6 +9,7 @@ const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const csso = require("gulp-csso");
 const del = require("del");
+const webp = require("gulp-webp");
 
 // Styles
 
@@ -121,3 +122,13 @@ const start = gulp.series(
 );
 
 exports.start = start;
+
+// Webp
+
+const createwebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.webp = createwebp;
