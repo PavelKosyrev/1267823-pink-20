@@ -3,6 +3,8 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var siteList = document.querySelector('.site-list');
 
       siteList.classList.add('site-list--js');
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
 
       navToggle.classList.add('main-nav__toggle--js');
 
